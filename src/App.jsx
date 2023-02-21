@@ -1,10 +1,13 @@
 import { useState } from 'react'
 import { Routes, Route, Outlet, Link } from 'react-router-dom'
+import Home from './Pages/Home'
 
 function App() {
   return (
     <div>
-      <h1 className='text-7xl font-bold '>hello world</h1>
+      <Routes>
+        <Route index element={<Home />} />
+      </Routes>
     </div>
   )
 }
