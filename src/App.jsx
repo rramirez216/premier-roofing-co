@@ -1,13 +1,17 @@
 import { useState } from 'react'
 import { Routes, Route, Outlet, Link } from 'react-router-dom'
 import Home from './Pages/Home'
+import Nav from './Components/Nav'
+import Footer from './Components/Footer/Footer'
 
 function App() {
   return (
-    <div>
+    <div className='h-full grid grid-rows-2'>
+      <Nav />
       <Routes>
         <Route index element={<Home />} />
       </Routes>
+      <Footer />
     </div>
   )
 }
