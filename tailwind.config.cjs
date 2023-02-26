@@ -11,7 +11,12 @@ module.exports = {
       'off-white': '#F7F6F2',
       white: '#FDFDFC',
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-pattern':
+          "linear-gradient(to right, hsl( 200 95% 14% / 0.9), hsl( 200 95% 14% / 0.5), hsl(200 95% 14% / 0.3)), url('/src/assets/hero.avif')",
+      },
+    },
   },
   plugins: [],
 }
