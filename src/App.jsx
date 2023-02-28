@@ -6,7 +6,7 @@ import Footer from './Components/Footer/Footer'
 
 function App() {
   return (
-    <div className='h-full grid main-grid'>
+    <div className='h-full grid main-grid text-white'>
       <Nav />
       <Routes>
         <Route index element={<Home />} />
