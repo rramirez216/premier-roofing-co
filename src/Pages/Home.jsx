@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from '../Components/Home/Hero'
-import Benefits from '../Components/Home/Benefits'
+import Benefits from '../Components/Home/Benefits/Benefits'
 import Services from '../Components/Home/Services'
 import About from '../Components/Home/About'
 import Testimonials from '../Components/Home/Testimonials'
