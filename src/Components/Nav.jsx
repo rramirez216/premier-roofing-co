@@ -21,7 +21,7 @@ function Nav() {
             <Link to='#Contact'>Contact</Link>
           </li>
         </ul>
-        <button className=' btn'>Get a Quote</button>
+        <button className='btn'>Get a Quote</button>
       </div>
     </nav>
   )
