@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hero() {
   return (
-    <section className='w-full h-full bg-hero-pattern bg-fixed bg-cover pentagon'>
+    <section className='w-full h-full bg-hero-pattern bg-scroll bg-cover pentagon'>
       <div className='w-full h-full flex flex-row items-center pl-24'>
         <div className='w-1/3 flex flex-col items-start gap-12 -translate-y-12'>
           <h1 className='text-5xl '>
