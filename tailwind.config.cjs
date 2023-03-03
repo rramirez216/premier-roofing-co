@@ -10,6 +10,8 @@ module.exports = {
       'dark-orange': '#fb8500',
       'off-white': '#F7F6F2',
       white: '#FDFDFC',
+      blue: '#219ebc',
+      'light-blue': '#8ecae6',
     },
     extend: {
       backgroundImage: {
