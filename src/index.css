@@ -13,7 +13,7 @@
     grid-template-rows: 1fr auto;
   }
   .pentagon {
-    clip-path: polygon(0 0, 100% 0, 100% 83%, 77% 92%, 0 70%);
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 73% 86%, 0 65%);
   }
   .list-item-background {
     background-image: linear-gradient(
