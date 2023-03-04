@@ -5,10 +5,10 @@ import { Clock, AlertTriangle, PiggyBank } from 'lucide-react'
 function Benefits() {
   return (
     <section className='flex flex-col items-center text-dark-blue gap-24'>
-      <h2 className=' text-4xl font-bold'>
+      <h2 className='text-4xl font-bold mb-8'>
         THE BENEFITS OF HIRING PREMIER ROOFING CO.
       </h2>
-      <div className='flex flex-row justify-center gap-16'>
+      <ul className='flex flex-row justify-center gap-16'>
         <Benefit
           children={<Clock fill='#ffb703' size={64} />}
           heading={'TIME-SAVING'}
@@ -30,7 +30,7 @@ function Benefits() {
             'Minimizes the need for future repairs by doing the job right the first time around.'
           }
         />
-      </div>
+      </ul>
       <button className='btn'>Get a Quote</button>
     </section>
   )
