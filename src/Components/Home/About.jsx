@@ -1,22 +1,26 @@
 import React from 'react'
+import One from '../../assets/workers.jpg'
+import Two from '../../assets/workers2.jpg'
 
 function About() {
   return (
-    <section>
-      <div>
-        <h2>WHO WE ARE</h2>
-        <p>
+    <section className='flex text-dark-blue pt-32'>
+      <div className='flex-1 flex flex-col items-center gap-8'>
+        <h2 className='text-2xl font-semibold'>WHO WE ARE</h2>
+        <p className='w-2/3'>
           Premier Roofing Co. is dedicated to providing exceptional roofing
           solutions that protect and enhance the value of our customers' homes
-          and businesses. Our mission is to deliver the highest quality roofing
-          services with integrity, professionalism, and reliability. We strive
-          to exceed our customers' expectations by providing personalized
-          attention, expert craftsmanship, and cost-effective solutions that
-          meet their unique needs. We are committed to promoting safety,
-          sustainability, and innovation in everything we do. At Premier Roofing
-          Co., our goal is to build lasting relationships with our customers by
-          consistently delivering exceptional service and exceptional results.
+          and businesses.
+          <br />
+          Our mission is to deliver the highest quality roofing services with
+          integrity, professionalism, and reliability. We strive to exceed our
+          customers' expectations by providing personalized attention, expert
+          craftsmanship, and cost-effective solutions that meet their unique
+          needs.
         </p>
+      </div>
+      <div className='flex-1  '>
+        <img className='w-3/4' src={One} alt='construction workers' />
       </div>
     </section>
   )
