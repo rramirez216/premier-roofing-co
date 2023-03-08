@@ -2,10 +2,10 @@ import React from 'react'
 
 function Hero() {
   return (
-    <section className='w-full h-2/3 bg-hero-pattern bg-scroll bg-cover pentagon overflow-hidden'>
+    <section className='w-full h-full bg-hero-pattern bg-scroll bg-cover pentagon overflow-hidden'>
       <div className='w-full h-full flex flex-row items-center pl-64'>
         <div className='w-96 flex flex-col items-start gap-12 -translate-y-20'>
-          <h1 className='text-5xl '>
+          <h1 className='text-5xl'>
             <span className='text-light-orange'> BUILDING STRONG ROOFS</span>{' '}
             FOR STRONG HOMES
           </h1>
