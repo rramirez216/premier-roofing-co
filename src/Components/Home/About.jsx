@@ -1,10 +1,10 @@
 import React from 'react'
-import One from '../../assets/workers.jpg'
+import AboutImage from '../../assets/workers.jpg'
 import Two from '../../assets/workers2.jpg'
 
 function About() {
   return (
-    <section className='flex text-dark-blue pt-32'>
+    <section className='flex text-dark-blue pt-32 pb-32'>
       <div className='flex-1 flex flex-col items-center gap-8'>
         <h2 className='text-2xl font-semibold'>WHO WE ARE</h2>
         <p className='w-2/3'>
@@ -20,7 +20,7 @@ function About() {
         </p>
       </div>
       <div className='flex-1  '>
-        <img className='w-3/4' src={One} alt='construction workers' />
+        <img className='w-3/4' src={AboutImage} alt='construction workers' />
       </div>
     </section>
   )
