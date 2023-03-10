@@ -4,7 +4,7 @@ import { Clock, AlertTriangle, PiggyBank } from 'lucide-react'
 
 function Benefits() {
   return (
-    <section className='flex flex-col items-center text-dark-blue gap-24'>
+    <section className='flex flex-col items-center text-dark-blue gap-24 pb-32'>
       <h2 className='text-4xl font-bold mb-8'>
         THE BENEFITS OF HIRING PREMIER ROOFING CO.
       </h2>
