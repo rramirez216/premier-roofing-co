@@ -4,7 +4,7 @@ import ListItemServices from './ListItemServices'
 
 function Services() {
   return (
-    <section className='flex flex-col items-center text-dark-blue gap-24 pt-32'>
+    <section className='flex flex-col items-center text-dark-blue gap-24 pt-32 pb-32'>
       <h2 className='text-4xl font-bold mb-8'>EXPLORE OUR SERVICES</h2>
       <ul className='flex flex-row justify-center gap-16'>
         <ListItemServices
