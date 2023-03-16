@@ -6,7 +6,7 @@ import Logo from '../../assets/Logo.png'
 
 function Footer() {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: 'AIzaSyC9MDHmBn7DFY13flkDAedWWqF-v9g5wJk',
+    googleMapsApiKey: '',
   })
   if (!isLoaded) return <div>Loading...</div>
   return (
