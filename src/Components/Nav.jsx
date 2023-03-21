@@ -12,7 +12,7 @@ function Nav() {
         <div className='border-t border-b-0 border-white flex-auto'></div>
         <ul className='flex items-baseline gap-4 text-white text-2xl'>
           <li>
-            <Link to='#Services'>Services</Link>
+            <Link to='/services'>Services</Link>
           </li>
           <li>
             <Link to='#About'>About</Link>
@@ -21,7 +21,6 @@ function Nav() {
             <Link to='#Contact'>Contact</Link>
           </li>
         </ul>
-        <button className='btn'>Get a Quote</button>
       </div>
     </nav>
   )
