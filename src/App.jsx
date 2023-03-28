@@ -7,6 +7,11 @@ import ServicesPage from './Pages/ServicesPage'
 
 function App() {
   const [toggleContact, setToggleContact] = useState(false)
+  const [serviceDisplayed, setServiceDisplayed] = useState({
+    name: 'Roof Inspection',
+    description:
+      "A comprehensive assessment of the roof's condition to identify any damage or potential issues.",
+  })
   return (
     <div className='h-full text-white text-lg relative'>
       <Nav />
@@ -14,7 +19,13 @@ function App() {
         <Route index element={<Home setToggleContact={setToggleContact} />} />
         <Route
           path='/services'
-          element={<ServicesPage setToggleContact={setToggleContact} />}
+          element={
+            <ServicesPage
+              setToggleContact={setToggleContact}
+              serviceDisplayed={serviceDisplayed}
+              setServiceDisplayed={setServiceDisplayed}
+            />
+          }
         />
       </Routes>
       <ContactForm
