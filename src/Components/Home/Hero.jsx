@@ -1,6 +1,7 @@
 import React from 'react'
+import ContactButton from '../ContactButton'
 
-function Hero() {
+function Hero({ setToggleContact }) {
   return (
     <section className='w-full h-full bg-hero-pattern bg-scroll bg-cover pentagon overflow-hidden'>
       <div className='w-full h-full flex flex-row items-center pl-64'>
@@ -13,7 +14,7 @@ function Hero() {
             So Cal's top-quality roofing service provider delivers long-term
             value and ensures the safety and protection of homes and businesses.
           </h2>
-          <button className='btn'>Get a Quote</button>
+          <ContactButton setToggleContact={setToggleContact} />
         </div>
       </div>
     </section>
