@@ -1,8 +1,9 @@
 import React from 'react'
-import Benefit from './Benefit'
 import { Clock, AlertTriangle, PiggyBank } from 'lucide-react'
+import Benefit from './Benefit'
+import ContactButton from '../../ContactButton'
 
-function Benefits() {
+function Benefits({ setToggleContact }) {
   return (
     <section className='flex flex-col items-center text-dark-blue gap-24 pb-32'>
       <h2 className='text-4xl font-bold mb-8'>
@@ -31,7 +32,7 @@ function Benefits() {
           }
         />
       </ul>
-      <button className='btn'>Get a Quote</button>
+      <ContactButton setToggleContact={setToggleContact} />
     </section>
   )
 }
