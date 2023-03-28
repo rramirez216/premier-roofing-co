@@ -6,11 +6,11 @@ import About from '../Components/Home/About'
 import Testimonials from '../Components/Home/Testimonials'
 import Footer from '../Components/Footer/Footer'
 
-function Home() {
+function Home({ setToggleContact }) {
   return (
     <main className='h-full'>
-      <Hero />
-      <Benefits />
+      <Hero setToggleContact={setToggleContact} />
+      <Benefits setToggleContact={setToggleContact} />
       <Services />
       <About />
       <Testimonials />
