@@ -10,7 +10,7 @@ function Footer() {
   })
   if (!isLoaded) return <div>Loading...</div>
   return (
-    <footer className='pb-4 bg-dark-blue'>
+    <footer className='pb-4 bg-dark-blue text-white'>
       <Map />
       <div className='flex flex-col gap-12 text-sm pt-20 px-8'>
         <div className='flex'>
