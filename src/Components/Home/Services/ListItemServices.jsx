@@ -1,5 +1,6 @@
 import React from 'react'
 import { ChevronRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 function ListItemServices({ heading, children }) {
   return (
@@ -10,7 +11,9 @@ function ListItemServices({ heading, children }) {
       <span className='flex items-center text-light-orange'>
         <ChevronRight size={24} className='' />
 
-        <span className='text-xl'>LEARN MORE</span>
+        <Link to='/services' className='text-xl'>
+          LEARN MORE
+        </Link>
       </span>
     </li>
   )
