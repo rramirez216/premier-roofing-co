@@ -12,11 +12,25 @@ function App() {
     description:
       "A comprehensive assessment of the roof's condition to identify any damage or potential issues.",
   })
+
+  const handleServiceClick = (a, b) => {
+    setServiceDisplayed({ name: a, description: b })
+    console.log(a, b)
+  }
   return (
     <div className='h-full text-white text-lg relative'>
       <Nav />
       <Routes>
-        <Route index element={<Home setToggleContact={setToggleContact} />} />
+        <Route
+          index
+          element={
+            <Home
+              setToggleContact={setToggleContact}
+              setServiceDisplayed={setServiceDisplayed}
+              handleServiceClick={handleServiceClick}
+            />
+          }
+        />
         <Route
           path='/services'
           element={
