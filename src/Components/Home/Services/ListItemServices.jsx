@@ -14,17 +14,15 @@ function ListItemServices({
       {children}
       <h3 className='max-w-min font-semibold text-2xl'>{heading}</h3>
 
-      <span className='flex items-center text-light-orange'>
+      <Link
+        className='flex items-center text-light-orange'
+        to='/services'
+        onClick={() => handleServiceClick(name, description)}
+      >
         <ChevronRight size={24} className='' />
 
-        <Link
-          to='/services'
-          className='text-xl'
-          onClick={() => handleServiceClick(name, description)}
-        >
-          LEARN MORE
-        </Link>
-      </span>
+        <span className='text-xl'>LEARN MORE</span>
+      </Link>
     </li>
   )
 }
