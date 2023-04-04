@@ -13,12 +13,14 @@ function Services({ setServiceDisplayed, handleServiceClick }) {
           children={<Search size={64} />}
           serviceObject={servicesProvidedArray[0]}
           setServiceDisplayed={setServiceDisplayed}
+          handleServiceClick={handleServiceClick}
         />
         <ListItemServices
           heading={'ROOF REPAIR'}
           children={<Hammer size={64} />}
           serviceObject={servicesProvidedArray[1]}
           setServiceDisplayed={setServiceDisplayed}
+          handleServiceClick={handleServiceClick}
         />
         <ListItemServices
           heading={'ROOF VENTILTION'}
