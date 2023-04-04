@@ -6,12 +6,15 @@ import About from '../Components/Home/About'
 import Testimonials from '../Components/Home/Testimonials'
 import Footer from '../Components/Footer/Footer'
 
-function Home({ setToggleContact }) {
+function Home({ setToggleContact, setServiceDisplayed, handleServiceClick }) {
   return (
     <main className='h-full'>
       <Hero setToggleContact={setToggleContact} />
       <Benefits setToggleContact={setToggleContact} />
-      <Services />
+      <Services
+        setServiceDisplayed={setServiceDisplayed}
+        handleServiceClick={handleServiceClick}
+      />
       <About />
       <Testimonials />
       <Footer />
