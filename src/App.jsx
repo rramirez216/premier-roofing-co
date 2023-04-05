@@ -15,7 +15,6 @@ function App() {
 
   const handleServiceClick = (a, b) => {
     setServiceDisplayed({ name: a, description: b })
-    console.log(a, b)
   }
   return (
     <div className='h-full text-white text-lg relative'>
