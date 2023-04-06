@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Logo from '../assets/Logo.png'
 import { useScrollPosition } from '../hooks/useScrollPosition'
 import { useLocation } from 'react-router-dom'
+import { Menu } from 'lucide-react'
 
 function Nav() {
   const scrollPosition = useScrollPosition()
@@ -18,7 +19,7 @@ function Nav() {
       }  text-2xl`}
     >
       <div className='w-7/12 flex items-center gap-8'>
-        <Link to='/' className='w-32 h-32'>
+        <Link to='/' className='w-32 h-32 min-w-[8rem]'>
           <img src={Logo} alt='logo' className='' />
         </Link>
         <div
@@ -26,9 +27,10 @@ function Nav() {
             scrollPosition > 50 || pathname === '/services'
               ? 'border-dark-blue'
               : 'border-white'
-          }  flex-auto`}
+          }  flex-auto sm:hidden`}
         ></div>
-        <ul className='flex items-baseline gap-4 font-semibold'>
+        <Menu size={32} className='hidden sm:block' />
+        <ul className='flex items-baseline gap-4 font-semibold sm:hidden'>
           <li>
             <Link to='/services'>Services</Link>
           </li>
