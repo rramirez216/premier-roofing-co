@@ -1,12 +1,28 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Footer from '../Components/Footer/Footer'
 import hammer from '../assets/hammer.jpg'
 import servicesProvidedArray from '../data/serviceArray'
+import { useScrollPosition } from '../hooks/useScrollPosition'
 
 function ServicesPage({
   serviceDisplayed: { name, description },
   setServiceDisplayed,
 }) {
+  // const scrollPosition = useScrollPosition()
+  const [scrollPosition, setScrollPosition] = useState(0)
+  const [imageSize, setImageSize] = useState(100)
+
+  useEffect(() => {
+    function handleScroll() {
+      setScrollPosition(window.pageYOffset)
+      setImageSize(100 - window.pageYOffset / 10)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [scrollPosition])
+
   return (
     <main className='text-dark-blue'>
       <section className='flex justify-center pt-48 pb-20'>
@@ -39,7 +55,9 @@ function ServicesPage({
               ))}
             </ul>
           </div>
-          <div className='w-[160px] justify-self-center self-end -translate-y-[384px] scale-[1.25]'>
+          <div
+            className={`w-[160px] justify-self-center self-end -translate-y-[${scrollPosition}px] scale-[1.25]`}
+          >
             <img src={hammer} alt='hammer' />
           </div>
         </div>
