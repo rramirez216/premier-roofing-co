@@ -4,10 +4,10 @@ import Two from '../../assets/workers2.jpg'
 
 function About() {
   return (
-    <section className='flex text-dark-blue pt-32 pb-32'>
+    <section className='flex flex-col md:flex-row text-dark-blue py-16 lg:py-32'>
       <div className='flex-1 flex flex-col items-center gap-8'>
-        <h2 className='text-2xl font-semibold'>WHO WE ARE</h2>
-        <p className='w-2/3'>
+        <h2 className='text-xl md:text-2xl font-semibold'>WHO WE ARE</h2>
+        <p className='w-2/3 text-base'>
           Premier Roofing Co. is dedicated to providing exceptional roofing
           solutions that protect and enhance the value of our customers' homes
           and businesses.

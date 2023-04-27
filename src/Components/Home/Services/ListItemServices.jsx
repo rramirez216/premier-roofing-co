@@ -10,9 +10,10 @@ function ListItemServices({
   handleServiceClick,
 }) {
   return (
-    <li className='w-72 h-96 flex flex-col items-center justify-center gap-6 rounded-lg text-white list-item-background text-center'>
+    // w-72 h-96
+    <li className='py-12 md:py-24 px-16 flex flex-col items-center justify-center gap-6 rounded-lg text-white list-item-background text-center'>
       {children}
-      <h3 className='max-w-min font-semibold text-2xl'>{heading}</h3>
+      <h3 className='max-w-min font-semibold text-xl md:text-2xl'>{heading}</h3>
 
       <Link
         className='flex items-center text-light-orange'
@@ -21,7 +22,7 @@ function ListItemServices({
       >
         <ChevronRight size={24} className='' />
 
-        <span className='text-xl'>LEARN MORE</span>
+        <span className='text-lg md:text-xl'>LEARN MORE</span>
       </Link>
     </li>
   )

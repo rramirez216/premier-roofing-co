@@ -5,11 +5,11 @@ import ContactButton from '../../ContactButton'
 
 function Benefits({ setToggleContact }) {
   return (
-    <section className='flex flex-col items-center text-dark-blue gap-24 pb-32'>
-      <h2 className='text-4xl font-bold mb-8'>
+    <section className='flex flex-col items-center text-dark-blue gap-12 lg:gap-24 pb-32'>
+      <h2 className='text-3xl font-bold mb-8 lg:text-4xl'>
         THE BENEFITS OF HIRING PREMIER ROOFING CO.
       </h2>
-      <ul className='flex flex-row justify-center gap-16'>
+      <ul className='flex flex-col gap-8 px-6 lg:px-0 lg:flex-row lg:justify-center lg:gap-16'>
         <Benefit
           children={<Clock fill='#ffb703' size={64} />}
           heading={'TIME-SAVING'}
