@@ -12,13 +12,14 @@ function App() {
     description:
       "A comprehensive assessment of the roof's condition to identify any damage or potential issues.",
   })
+  const [toggleNav, setToggleNav] = useState(false)
 
   const handleServiceClick = (a, b) => {
     setServiceDisplayed({ name: a, description: b })
   }
   return (
     <div className='h-full text-white text-lg relative'>
-      <Nav />
+      <Nav toggleNav={toggleNav} setToggleNav={setToggleNav} />
       <Routes>
         <Route
           index
