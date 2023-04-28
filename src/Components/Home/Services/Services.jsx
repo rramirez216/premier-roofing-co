@@ -6,7 +6,7 @@ import servicesProvidedArray from '../../../data/serviceArray'
 function Services({ setServiceDisplayed, handleServiceClick }) {
   return (
     <section className='flex flex-col items-center text-dark-blue gap-12 py-16 lg:gap-24 lg:py-32'>
-      <h2 className='text-3xl lg:text-4xl font-bold mb-8'>
+      <h2 className='text-2xl lg:text-4xl font-bold mb-8'>
         EXPLORE OUR SERVICES
       </h2>
       <ul className='flex flex-col gap-8 lg:flex-row lg:justify-center lg:gap-16'>
