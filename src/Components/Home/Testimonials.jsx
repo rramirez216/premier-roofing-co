@@ -7,8 +7,8 @@ import { Autoplay } from 'swiper'
 
 function Testimonials() {
   return (
-    <section className='pt-20 pb-20 bg-dark-blue flex justify-center'>
-      <div className='border-t border-b border-dark-orange pt-8 pb-8 w-1/2'>
+    <section className='py-20 bg-dark-blue flex justify-center'>
+      <div className='border-t border-b border-dark-orange py-8 w-full lg:w-1/2'>
         <Swiper
           centeredSlides={true}
           loop={true}
@@ -20,9 +20,13 @@ function Testimonials() {
         >
           {testimonialsArray.map((value) => (
             <SwiperSlide key={value.id} className='flex justify-center'>
-              <figure className='max-w-lg text-center'>
-                <blockquote className='text-2xl pb-4'>{value.quote}</blockquote>
-                <figcaption className='text-center'>- {value.name}</figcaption>
+              <figure className='max-w-lg text-center px-8 lg:px-0'>
+                <blockquote className='text-base lg:text-2xl pb-2 lg:pb-4'>
+                  {value.quote}
+                </blockquote>
+                <figcaption className='text-center text-base lg:text-2xl'>
+                  - {value.name}
+                </figcaption>
               </figure>
             </SwiperSlide>
           ))}
