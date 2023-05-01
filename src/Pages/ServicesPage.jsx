@@ -25,20 +25,20 @@ function ServicesPage({
 
   return (
     <main className='text-dark-blue'>
-      <section className='flex justify-center pt-48 pb-20'>
-        <div className='w-240 grid grid-cols-2 pl-16'>
+      <section className='flex justify-center pt-44 md:pt-48 pb-16 md:pb-32'>
+        <div className='w-240 grid grid-cols-1 lg:grid-cols-2 pl-16 pr-16 lg:pr-0'>
           <div className='min-h-[156px]'>
             <p className='text-sm'>Raising the Bar on Roofing</p>
             <h1 className='font-bold mb-4 text-3xl'>{name}</h1>
-            <p>{description}</p>
+            <p className='text-base'>{description}</p>
           </div>
         </div>
       </section>
-      <section className='flex justify-center py-24 px-20 bg-off-white'>
-        <div className='w-240 grid grid-cols-2  '>
+      <section className='flex justify-center py-16 lg:py-32 px-20 bg-off-white'>
+        <div className='w-240 grid grid-cols-1 lg:grid-cols-2'>
           <div className='justify-self-center'>
             <p className='font-bold text-2xl mb-8'>Other services we offer:</p>
-            <ul className='flex flex-col '>
+            <ul className='flex flex-col text-base'>
               {servicesProvidedArray.map(({ id, name, description }) => (
                 <li
                   className='py-2 px-8  border border-dark-blue cursor-pointer'
@@ -56,7 +56,7 @@ function ServicesPage({
             </ul>
           </div>
           <div
-            className={`w-[160px] justify-self-center self-end -translate-y-[${scrollPosition}px] scale-[1.25]`}
+            className={`w-[160px] justify-self-center self-end -translate-y-[${scrollPosition}px] scale-[1.25] hidden md:block`}
           >
             <img src={hammer} alt='hammer' />
           </div>
