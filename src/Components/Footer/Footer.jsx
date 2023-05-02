@@ -12,20 +12,20 @@ function Footer() {
   return (
     <footer className='pb-4 bg-dark-blue text-white'>
       <Map />
-      <div className='flex flex-col gap-12 text-sm pt-20 px-8'>
+      <div className='flex flex-col gap-6 lg:gap-12 text-sm py-10 px-8 lg:py-20'>
         <div className='flex'>
-          <div className='self-center flex-2 flex flex-row flex-wrap justify-center gap-12'>
+          <div className='self-center flex-2 flex flex-col items-center md:flex-row flex-wrap md:justify-center gap-6 lg:gap-12'>
             <div className='w-40'>
-              <h3 className='text-lg mb-4 font-semibold'>Address</h3>
+              <h3 className='text-lg mb-2 lg:mb-4 font-semibold'>Address</h3>
               <p className=''>2896 Metropolitan Pl Pomona, CA 91767</p>
             </div>
             <div className='w-40'>
-              <h3 className='text-lg mb-4 font-semibold'>Contact</h3>
+              <h3 className='text-lg mb-2 lg:mb-4 font-semibold'>Contact</h3>
               <p>info@premierroofingco.com</p>
               <p>(909) 232-4598</p>
             </div>
             <div className='w-40'>
-              <h3 className='text-lg mb-4 font-semibold'>Hours</h3>
+              <h3 className='text-lg mb-2 lg:mb-4 font-semibold'>Hours</h3>
               <p>Mon - Fri: 8 am - 7 pm</p>
             </div>
           </div>
