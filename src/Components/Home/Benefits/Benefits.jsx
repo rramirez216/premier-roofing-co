@@ -9,7 +9,7 @@ function Benefits({ setToggleContact }) {
       <h2 className='text-2xl text-center font-bold mb-8 px-8 lg:px-0 lg:text-4xl'>
         THE BENEFITS OF HIRING PREMIER ROOFING CO.
       </h2>
-      <ul className='flex flex-col gap-8 px-10 lg:px-0 lg:flex-row lg:justify-center lg:gap-16'>
+      <ul className='flex flex-col gap-8 px-10 lg:px-16 lg:flex-row lg:justify-center lg:gap-16'>
         <Benefit
           children={<Clock fill='#ffb703' size={64} />}
           heading={'TIME-SAVING'}
