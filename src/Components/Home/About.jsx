@@ -6,8 +6,10 @@ function About() {
   return (
     <section className='flex flex-col gap-8 md:flex-row text-dark-blue py-16 px-8 lg:px-0 lg:py-32'>
       <div className='lg:flex-1 flex flex-col items-center gap-8 lg:gap-0'>
-        <h2 className='text-2xl font-semibold lg:mb-16'>WHO WE ARE</h2>
-        <p className='lg:w-2/3 text-base'>
+        <h2 className='text-2xl font-semibold lg:text-4xl lg:mb-16'>
+          WHO WE ARE
+        </h2>
+        <p className='text-base lg:text-lg lg:w-2/3'>
           Premier Roofing Co. is dedicated to providing exceptional roofing
           solutions that protect and enhance the value of our customers' homes
           and businesses.
