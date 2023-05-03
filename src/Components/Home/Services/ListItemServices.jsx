@@ -11,7 +11,7 @@ function ListItemServices({
 }) {
   return (
     // w-72 h-96
-    <li className='py-12 md:py-24 px-16 flex flex-col items-center justify-center gap-6 rounded-lg text-white list-item-background text-center'>
+    <li className='py-12 px-16 flex flex-col items-center justify-center gap-6 rounded-lg text-white list-item-background text-center lg:py-24'>
       {children}
       <h3 className='max-w-min font-semibold text-xl md:text-2xl'>{heading}</h3>
 
