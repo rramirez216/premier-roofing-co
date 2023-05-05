@@ -1,5 +1,6 @@
 import React from 'react'
 import { useLoadScript } from '@react-google-maps/api'
+import { HashLink } from 'react-router-hash-link'
 import Map from './Map'
 import ContactForm from './ContactForm'
 import Logo from '../../assets/Logo.png'
@@ -12,7 +13,10 @@ function Footer() {
   return (
     <footer className='pb-4 bg-dark-blue text-white'>
       <Map />
-      <div className='flex flex-col gap-6 lg:gap-12 text-sm py-10 px-8 lg:py-20'>
+      <div
+        className='flex flex-col gap-6 lg:gap-12 text-sm py-10 px-8 lg:py-20'
+        id='contact'
+      >
         <div className='flex'>
           <div className='self-center flex-2 flex flex-col items-center md:flex-row flex-wrap md:justify-center gap-6 lg:gap-12'>
             <div className='max-w-[192px]'>
@@ -31,9 +35,9 @@ function Footer() {
           </div>
         </div>
         <div className='flex flex-col items-center gap-4 text-center lg:text-left'>
-          <div className='w-24 h-24'>
+          <HashLink to='/#home' className='w-24 h-24 block'>
             <img src={Logo} alt='logo' className='' />
-          </div>
+          </HashLink>
           <p> &copy; 2023 Premier Roofing Co. All Rights Reserved</p>
         </div>
       </div>
