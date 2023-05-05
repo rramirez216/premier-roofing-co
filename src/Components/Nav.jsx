@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 import Logo from '../assets/Logo.png'
 import { useScrollPosition } from '../hooks/useScrollPosition'
 import { useLocation } from 'react-router-dom'
@@ -56,22 +57,22 @@ function Nav({ toggleNav, setToggleNav }) {
               <Link to='/services'>Services</Link>
             </li>
             <li>
-              <Link to='#About'>About</Link>
+              <HashLink to='/#about'>About</HashLink>
             </li>
             <li>
-              <Link to='#Contact'>Contact</Link>
+              <a href='#contact'>Contact</a>
             </li>
           </ul>
         </div>
         <ul className='hidden sm:flex items-baseline gap-4 font-semibold'>
-          <li>
+          <li className='transition duration-[300ms] hover:text-light-orange'>
             <Link to='/services'>Services</Link>
           </li>
-          <li>
-            <Link to='#About'>About</Link>
+          <li className='transition duration-[300ms] hover:text-light-orange'>
+            <HashLink to='/#about'>About</HashLink>
           </li>
-          <li>
-            <Link to='#Contact'>Contact</Link>
+          <li className='transition duration-[300ms] hover:text-light-orange'>
+            <a href='#contact'>Contact</a>
           </li>
         </ul>
       </div>
