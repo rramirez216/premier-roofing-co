@@ -8,7 +8,7 @@ module.exports = {
       'dark-blue': '#023047',
       'light-orange': '#ffb703',
       'dark-orange': '#fb8500',
-      'darker-orange': '#EB840F',
+      'darker-orange': '#FA7900',
       'off-white': '#F7F6F2',
       'off-white-dark': '#E5E4E1',
       white: '#FDFDFC',
