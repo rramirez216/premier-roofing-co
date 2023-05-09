@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
-import Logo from '../assets/Logo.png'
+import Logo from '../assets/logo.png'
 import { useScrollPosition } from '../hooks/useScrollPosition'
 import { useLocation } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
