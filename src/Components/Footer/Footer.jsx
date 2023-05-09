@@ -3,7 +3,7 @@ import { useLoadScript } from '@react-google-maps/api'
 import { HashLink } from 'react-router-hash-link'
 import Map from './Map'
 import ContactForm from './ContactForm'
-import Logo from '../../assets/Logo.png'
+import Logo from '../../assets/logo.png'
 
 function Footer() {
   const { isLoaded } = useLoadScript({
