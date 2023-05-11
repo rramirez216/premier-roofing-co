@@ -10,18 +10,17 @@ function ServicesPage({
 }) {
   // const scrollPosition = useScrollPosition()
   const [scrollPosition, setScrollPosition] = useState(0)
-  const [imageSize, setImageSize] = useState(100)
 
-  useEffect(() => {
-    function handleScroll() {
-      setScrollPosition(window.pageYOffset)
-      setImageSize(100 - window.pageYOffset / 10)
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [scrollPosition])
+  // useEffect(() => {
+  //   function handleScroll() {
+  //     setScrollPosition(window.pageYOffset)
+  //     setImageSize(100 - window.pageYOffset / 10)
+  //   }
+  //   window.addEventListener('scroll', handleScroll)
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll)
+  //   }
+  // }, [scrollPosition])
 
   return (
     <main className='text-dark-blue'>
