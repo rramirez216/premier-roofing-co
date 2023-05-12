@@ -8,19 +8,7 @@ function ServicesPage({
   serviceDisplayed: { name, description },
   setServiceDisplayed,
 }) {
-  // const scrollPosition = useScrollPosition()
-  const [scrollPosition, setScrollPosition] = useState(0)
-
-  // useEffect(() => {
-  //   function handleScroll() {
-  //     setScrollPosition(window.pageYOffset)
-  //     setImageSize(100 - window.pageYOffset / 10)
-  //   }
-  //   window.addEventListener('scroll', handleScroll)
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll)
-  //   }
-  // }, [scrollPosition])
+  const scrollPosition = useScrollPosition()
 
   return (
     <main className='text-dark-blue'>
