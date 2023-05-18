@@ -16,11 +16,14 @@ function ListItemServices({
       <h3 className='max-w-min font-semibold text-xl md:text-2xl'>{heading}</h3>
 
       <Link
-        className='flex items-center text-light-orange'
+        className='flex items-center text-light-orange group'
         to='/services'
         onClick={() => handleServiceClick(name, description)}
       >
-        <ChevronRight size={24} className='' />
+        <ChevronRight
+          size={24}
+          className='transition group-hover:duration-200 group-hover:-translate-x-4'
+        />
 
         <span className='text-lg md:text-xl'>LEARN MORE</span>
       </Link>
