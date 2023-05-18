@@ -35,7 +35,7 @@ function Nav({ toggleNav, setToggleNav }) {
             onClick={() => setToggleNav(!toggleNav)}
             size={40}
             fill='#fff'
-            className='shrink-0 z-20 sm:hidden'
+            className='shrink-0 z-20 sm:hidden text-white'
           />
         ) : (
           <Menu
