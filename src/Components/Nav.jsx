@@ -8,8 +8,8 @@ import { Menu, X } from 'lucide-react'
 
 function Nav({ toggleNav, setToggleNav }) {
   const scrollPosition = useScrollPosition()
-  console.log(scrollPosition, toggleNav)
   const { pathname } = useLocation()
+  console.log(scrollPosition, toggleNav)
 
   return (
     <nav
