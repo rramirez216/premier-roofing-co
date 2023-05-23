@@ -43,7 +43,7 @@ function ServicesPage({
             </ul>
           </div>
           <div
-            className={`w-[160px] justify-self-center self-end -translate-y-[${scrollPosition}px] scale-[1.25] hidden md:block`}
+            className={`w-[160px] justify-self-center self-end -translate-y-[100%] scale-[1.25] hidden md:block`}
           >
             <img src={hammer} alt='hammer' />
           </div>
