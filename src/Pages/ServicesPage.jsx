@@ -8,7 +8,12 @@ function ServicesPage({
   serviceDisplayed: { name, description },
   setServiceDisplayed,
 }) {
+  const [percent, setPercent] = useState(50)
   const scrollPosition = useScrollPosition()
+  useEffect(() => {
+    setPercent(percent - 10)
+  }, [scrollPosition])
+  // -translate-y-[${20}%]
 
   return (
     <main className='text-dark-blue'>
@@ -24,7 +29,9 @@ function ServicesPage({
       <section className='flex justify-center py-16 lg:py-32 px-20 bg-off-white'>
         <div className='w-240 grid grid-cols-1 lg:grid-cols-2'>
           <div className='justify-self-center'>
-            <p className='font-bold text-2xl mb-8'>Other services we offer:</p>
+            <p className='font-bold text-2xl mb-8'>
+              Other services we offer: {`${percent}`}
+            </p>
             <ul className='flex flex-col text-base lg:text-lg'>
               {servicesProvidedArray.map(({ id, name, description }) => (
                 <li
@@ -43,7 +50,9 @@ function ServicesPage({
             </ul>
           </div>
           <div
-            className={`w-[160px] justify-self-center self-end -translate-y-[100%] scale-[1.25] hidden md:block`}
+            className={
+              'w-[160px] justify-self-center self-end scale-[1.25]  hidden md:block'
+            }
           >
             <img src={hammer} alt='hammer' />
           </div>
