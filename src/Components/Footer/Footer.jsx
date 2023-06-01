@@ -7,8 +7,9 @@ import Logo from '../../assets/logo.png'
 
 function Footer() {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: '',
+    googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAP_KEY,
   })
+
   if (!isLoaded) return <div>Loading...</div>
   return (
     <footer className='pb-4 bg-dark-blue text-white'>
