@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { GoogleMap, Marker } from '@react-google-maps/api'
+import { GoogleMap, MarkerF } from '@react-google-maps/api'
 
 function Map() {
   const center = useMemo(
@@ -9,7 +9,7 @@ function Map() {
 
   return (
     <GoogleMap zoom={19} center={center} mapContainerClassName='h-96'>
-      <Marker position={center} />
+      <MarkerF position={center} />
     </GoogleMap>
   )
 }
