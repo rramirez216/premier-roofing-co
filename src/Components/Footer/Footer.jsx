@@ -12,7 +12,7 @@ function Footer() {
 
   return (
     <footer className='pb-4 bg-dark-blue text-white'>
-      {isLoaded && <Map />}
+      {!isLoaded ? <div>Loading...</div> : <Map />}
       <div
         className='flex flex-col gap-6 lg:gap-12 text-sm py-10 px-8 lg:py-20'
         id='contact'
