@@ -10,10 +10,9 @@ function Footer() {
     googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAP_KEY,
   })
 
-  if (!isLoaded) return <div>Loading...</div>
   return (
     <footer className='pb-4 bg-dark-blue text-white'>
-      <Map />
+      {isLoaded && <Map />}
       <div
         className='flex flex-col gap-6 lg:gap-12 text-sm py-10 px-8 lg:py-20'
         id='contact'
