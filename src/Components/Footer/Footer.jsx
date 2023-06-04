@@ -5,7 +5,7 @@ import Map from './Map'
 import ContactForm from './ContactForm'
 import Logo from '../../assets/logo.png'
 
-function Footer() {
+function Footer({ setToggleContact }) {
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAP_KEY,
   })
@@ -25,7 +25,12 @@ function Footer() {
             </div>
             <div className='min-w-[192px]'>
               <h3 className='text-lg mb-2 lg:mb-4 font-semibold'>Contact</h3>
-              <p>info@premierroofingco.com</p>
+              <p
+                className='transition duration-[300ms] hover:text-light-orange hover:cursor-pointer'
+                onClick={() => setToggleContact(true)}
+              >
+                info@premierroofingco.com
+              </p>
               <p>(909) 232-4598</p>
             </div>
             <div className='min-w-[192px]'>
@@ -36,7 +41,7 @@ function Footer() {
         </div>
         <div className='flex flex-col items-center gap-4 text-center lg:text-left'>
           <HashLink to='/#home' className='w-24 h-24 block'>
-            <img src={Logo} alt='logo' className='' />
+            <img src={Logo} alt='logo' />
           </HashLink>
           <p> &copy; 2023 Premier Roofing Co. All Rights Reserved</p>
         </div>
