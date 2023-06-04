@@ -17,7 +17,7 @@ function Home({ setToggleContact, setServiceDisplayed, handleServiceClick }) {
       />
       <About />
       <Testimonials />
-      <Footer />
+      <Footer setToggleContact={setToggleContact} />
     </main>
   )
 }
