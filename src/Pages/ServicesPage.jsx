@@ -12,15 +12,11 @@ function ServicesPage({
 }) {
   const [percent, setPercent] = useState(100)
   const scrollPosition = useScrollPosition()
-  // useEffect(() => {
-  //   if (scrollPosition > 0 && percent > 0) {
-  //     setPercent(percent - 10)
-  //   } else {
-  //     setPercent(percent + 10)
-  //   }
-  // }, [scrollPosition])
-  // -translate-y-[${20}%]
-  // cant use dynamic values with arbitrary values
+  useEffect(() => {
+    if (scrollPosition > 0 && percent > 0) {
+      setPercent(percent - 10)
+    }
+  }, [scrollPosition])
 
   return (
     <main className='text-dark-blue'>
