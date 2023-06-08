@@ -11,11 +11,17 @@ function ServicesPage({
   setToggleContact,
 }) {
   const [percent, setPercent] = useState(100)
+  const [lastScrollPosition, setLastScrollPosition] = useState(0)
+
   const scrollPosition = useScrollPosition()
+
   useEffect(() => {
-    if (scrollPosition > 0 && percent > 0) {
+    if (scrollPosition > lastScrollPosition && percent > 0) {
       setPercent(percent - 10)
+    } else if (scrollPosition < lastScrollPosition && percent < 100) {
+      setPercent(percent + 10)
     }
+    setLastScrollPosition(scrollPosition)
   }, [scrollPosition])
 
   return (
